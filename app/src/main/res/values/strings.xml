@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FootballClubs</string>
+    <string name="registration_error">Registration failed.</string>
+    <string name="authorization_error">Authorization failed.</string>
+    <string name="unexpected_error">Unexpected error.</string>
+    <string name="authentication_error">Authentication failed.</string>
+    <string name="best_players_title">Best Players</string>
+    <string name="favourite_title">Favourite Clubs</string>
+    <string name="home_title">Popular Clubs</string>
+    <string name="logout_confirm_message">Are you sure you want to logout?</string>
+    <string name="delete_confirm_message">Are you sure you want to delete your profile?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sign_in_title">Sign in to your account</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_surname">Enter Surname</string>
+    <string name="enter_patronymic">Enter Patronymic</string>
+    <string name="enter_birthday">Enter Birthday</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="enter_status">Enter Status</string>
+    <string name="enter_bio">Enter Bio</string>
+    <string name="enter_country">Enter Country</string>
+    <string name="enter_city">Enter City</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_title">Create New Account</string>
+    <string name="empty_fields_message">Fields are empty.</string>
+</resources>

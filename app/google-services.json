@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "359835339272",
+    "project_id": "footballclubs-d1bed",
+    "storage_bucket": "footballclubs-d1bed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359835339272:android:ae708e95705378ee361fbd",
+        "android_client_info": {
+          "package_name": "com.example.footballclubs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEkvWDbMNz88kWMTdooue7nfBloghqJfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
