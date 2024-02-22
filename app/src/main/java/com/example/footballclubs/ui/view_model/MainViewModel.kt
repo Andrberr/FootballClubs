@@ -25,8 +25,6 @@ class MainViewModel(
     private var _isUserSignedIn = MutableStateFlow(false)
     val isUserSignedIn = _isUserSignedIn.asStateFlow()
 
-    var currentClub = Club.empty()
-
     private var _isSignUpSuccess = MutableLiveData<Boolean>()
     val isSignUpSuccess: LiveData<Boolean> = _isSignUpSuccess
 
@@ -39,6 +37,9 @@ class MainViewModel(
     private var _isUserDeleted = MutableLiveData<Boolean>()
     val isUserDeleted: LiveData<Boolean> = _isUserDeleted
 
+    var currentClub = Club.empty()
+    private var allClubs = mutableListOf<Club>()
+
     fun fetchClubs() {
         val clubs = mutableListOf<Club>()
 
@@ -48,11 +49,17 @@ class MainViewModel(
                 for (document in result) {
                     clubs.add(getClubFromDocument(document))
                 }
+                allClubs.clear()
+                allClubs.addAll(clubs)
                 _clubs.value = clubs
             }
             .addOnFailureListener {
                 _clubs.value = clubs
             }
+    }
+
+    fun fetchSearchClubs(query: String) {
+        _clubs.value = allClubs.filter { it.name.startsWith(query) }
     }
 
     fun fetchLikedClubs(ids: List<Int>) {

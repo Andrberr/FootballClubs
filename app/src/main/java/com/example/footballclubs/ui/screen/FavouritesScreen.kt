@@ -3,8 +3,6 @@ package com.example.footballclubs.ui.screen
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import com.example.footballclubs.R
@@ -19,7 +17,7 @@ fun FavouriteScreen(
     viewModel: MainViewModel
 ) {
 
-    val clubs by viewModel.likedClubs.collectAsState()
+    val clubs = viewModel.likedClubs.collectAsState()
 
     LaunchedEffect(key1 = Unit) {
         val likedIds = CurrentUser.user?.likedClubsIds ?: emptyList()
@@ -31,6 +29,7 @@ fun FavouriteScreen(
         clubs = clubs,
         navController = navController,
         viewModel = viewModel,
-        color = DarkPurple
+        color = DarkPurple,
+        showSearchIcon = false
     )
 }

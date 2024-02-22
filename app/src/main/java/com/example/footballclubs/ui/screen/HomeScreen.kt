@@ -17,7 +17,7 @@ fun HomeScreen(
     viewModel: MainViewModel,
     showBottomNavBar: () -> Unit
 ) {
-    val clubs by viewModel.clubs.collectAsState()
+    val clubs = viewModel.clubs.collectAsState()
 
     LaunchedEffect(key1 = Unit) {
         showBottomNavBar()
@@ -29,6 +29,7 @@ fun HomeScreen(
         clubs = clubs,
         navController = navController,
         viewModel = viewModel,
-        color = DarkBlue
+        color = DarkBlue,
+        showSearchIcon = true
     )
 }

@@ -27,4 +27,5 @@
     <string name="sign_up">Sign Up</string>
     <string name="sign_up_title">Create New Account</string>
     <string name="empty_fields_message">Fields are empty.</string>
+    <string name="search_hint">Search for club</string>
 </resources>
